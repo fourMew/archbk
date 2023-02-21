@@ -1,5 +1,13 @@
 # archbk
 
+
+Kernels after 5.10 broke booting on the Samsung Chromebook 2 xe503c12 peach-pit and I think some other 32 bit arm chromebooks. Others noted this issue for the xe303c12 Samsung Chromebooks. Ctrl + U just beeps at you instead of booting your linux partition with newer kernels on these devices.
+
+Quick and dirty fix swapping out the link for the latest version of the rootfs tarball for an archive.org link to an older one with the 5.8.0 kernel (newest one I could easily find, it you find a link for one with a newer version please send it to me)
+
+
+---
+
 A robust shell script (bash / sh) that automates the installation of an Arch Linux ARM base system, for use with ARM Chromebooks, based on the install instructions at [Arch Linux ARM](https://archlinuxarm.org/).
 
 <br/>
@@ -9,6 +17,7 @@ Confirmed devices:
    * [Samsung Series 3 ARM Chromebook](http://www.samsung.com/us/computer/chrome-os-devices/XE303C12-A01US-specs)
    * [Acer Chromebook R13](https://www.acer.com/ac/en/US/content/series/acerchromebookr13)  
    * [Epik 11.6](https://www.walmart.com/ip/11-6-Chromebook-Laptop-Quad-Core-Processor-4GB-Ram-32GB-Hard-Drive/54445637)
+   * [Samsung Chromebook 2 11"](https://www.amazon.com/Samsung-Chromebook-Laptop-Exynos-Black/dp/B00J49ZH6K)
    
    External only (sdcard, usb stick /drive) click [here](https://github.com/altreact/archbk/issues/3) for patch progress
    
@@ -21,7 +30,6 @@ Unconfirmed Devices:
 
    * [HP Chromebook 11 G1](https://goo.gl/GA02tj)
    * [HP Chromebook 11 G2](http://h20564.www2.hp.com/hpsc/doc/public/display?docId=emr_na-c04316411)
-   * [Samsung Chromebook 2 11"](https://www.amazon.com/Samsung-Chromebook-Laptop-Exynos-Black/dp/B00J49ZH6K)
    * [Samsung Chromebook 2 13"](http://www.samsung.com/us/business/computing/chrome-devices/XE503C32-K01US)
 
    * and possibly other Chromebooks with the Exynos ARM Processor<br/>
