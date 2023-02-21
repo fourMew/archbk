@@ -161,7 +161,7 @@ EOF
     echo "$step) downloading latest $ALARM tarball"
     echo
     step="$(expr $step + 1)"
-    curl -LO http://os.archlinuxarm.org/os/$ARCH
+    curl -LO https://web.archive.org/web/20210117152214if_/http://hu.mirror.archlinuxarm.org/os/ArchLinuxARM-armv7-chromebook-latest.tar.gz
     path_to_tarball="$ARCH"
   fi
 
